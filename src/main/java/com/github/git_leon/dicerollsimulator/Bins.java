@@ -13,7 +13,7 @@ public class Bins {
     public Bins(Integer minFaceValue, Integer maxFaceValue) {
         Integer numberOfBins = maxFaceValue - minFaceValue;
         this.bins = new ArrayList<>();
-        for (int currentIndex = 0; currentIndex < numberOfBins; currentIndex++) {
+        for (int currentIndex = 0; currentIndex < numberOfBins+1; currentIndex++) {
             Integer currentValue = minFaceValue + currentIndex;
             bins.add(new Bin(currentValue));
         }

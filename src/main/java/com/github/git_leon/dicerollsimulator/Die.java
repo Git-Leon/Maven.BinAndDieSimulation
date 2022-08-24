@@ -16,7 +16,7 @@ public class Die {
 
     public void roll() {
         ThreadLocalRandom randomNumberGenerator = ThreadLocalRandom.current();
-        Integer randomFaceValue = randomNumberGenerator.nextInt(1, numberOfFaces);
+        Integer randomFaceValue = randomNumberGenerator.nextInt(1, numberOfFaces+1);
         this.currentFaceValue = randomFaceValue;
     }
 
