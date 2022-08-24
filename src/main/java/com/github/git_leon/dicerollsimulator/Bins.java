@@ -11,7 +11,7 @@ public class Bins {
     }
 
     public Bins(Integer minFaceValue, Integer maxFaceValue) {
-        Integer numberOfBins = maxFaceValue - minFaceValue;
+        Integer numberOfBins = maxFaceValue - minFaceValue + 1;
         this.bins = new HashMap<>();
         for (int currentIndex = 0; currentIndex < numberOfBins; currentIndex++) {
             Integer currentValue = minFaceValue + currentIndex;
