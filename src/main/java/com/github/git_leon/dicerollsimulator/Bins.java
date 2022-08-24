@@ -9,7 +9,7 @@ public class Bins {
 
     public Bins(Integer minFaceValue, Integer maxFaceValue) {
         Integer numberOfBins = maxFaceValue - minFaceValue;
-        this.bins = new Bin[numberOfBins];
+        this.bins = new Bin[numberOfBins+1];
         for (int currentIndex = 0; currentIndex < bins.length; currentIndex++) {
             Integer currentValue = minFaceValue + currentIndex;
             bins[currentIndex] = new Bin(currentValue);
